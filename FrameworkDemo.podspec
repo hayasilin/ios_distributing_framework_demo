@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                     This is FrameworkDemo pod A quick tool to create in-app FrameworkDemo.
                    DESC
 
-  s.homepage     = "https://github.com/hayasilin/iOS_MobileAD_SDK.git"
+  s.homepage     = "https://github.com/hayasilin/ios_frameworkdemo.git"
 
   s.license      = 'MIT'
 
@@ -16,11 +16,9 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/hayasilin/iOS_MobileAD_SDK.git"}
+  s.source       = { :git => "git@github.com:hayasilin/ios_frameworkdemo.git"}
 
-  # s.source_files = "MobileADSDK", "MobileADSDK/**/*.{h,m,swift}"
   s.source_files  = "FrameworkDemo", "FrameworkDemo/**/**/*"
-  # s.source_files  = 'MobileADSDK-Demo', 'MobileADSDK-Demo/**/**/*'
 
   s.requires_arc  = true
 
