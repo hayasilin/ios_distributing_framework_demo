@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "git@github.com:hayasilin/ios_frameworkdemo.git"}
+  s.source       = { :git => "git@github.com:hayasilin/ios_frameworkdemo.git", :tag => s.version.to_s }
 
   s.source_files  = "FrameworkDemo", "FrameworkDemo/**/**/*"
 
