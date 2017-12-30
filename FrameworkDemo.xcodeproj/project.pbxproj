@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC137AC61FF7364700CA199A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC137AC51FF7364700CA199A /* AppDelegate.swift */; };
+		AC137AC81FF7364700CA199A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC137AC71FF7364700CA199A /* ViewController.swift */; };
+		AC137ACB1FF7364700CA199A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC137AC91FF7364700CA199A /* Main.storyboard */; };
+		AC137ACD1FF7364700CA199A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC137ACC1FF7364700CA199A /* Assets.xcassets */; };
+		AC137AD01FF7364700CA199A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC137ACE1FF7364700CA199A /* LaunchScreen.storyboard */; };
+		AC137AD51FF7365400CA199A /* FrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC760C961FF6EE04007B6C05 /* FrameworkDemo.framework */; };
+		AC137AD61FF7365400CA199A /* FrameworkDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC760C961FF6EE04007B6C05 /* FrameworkDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC760CA01FF6EE04007B6C05 /* FrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC760C961FF6EE04007B6C05 /* FrameworkDemo.framework */; };
 		AC760CA51FF6EE04007B6C05 /* FrameworkDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC760CA41FF6EE04007B6C05 /* FrameworkDemoTests.swift */; };
 		AC760CA71FF6EE04007B6C05 /* FrameworkDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = AC760C991FF6EE04007B6C05 /* FrameworkDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -14,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC137AD71FF7365400CA199A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC760C8D1FF6EE04007B6C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC760C951FF6EE04007B6C05;
+			remoteInfo = FrameworkDemo;
+		};
 		AC760CA11FF6EE04007B6C05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC760C8D1FF6EE04007B6C05 /* Project object */;
@@ -23,7 +37,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC137AD91FF7365400CA199A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC137AD61FF7365400CA199A /* FrameworkDemo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AC137AC31FF7364700CA199A /* UIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC137AC51FF7364700CA199A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC137AC71FF7364700CA199A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC137ACA1FF7364700CA199A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC137ACC1FF7364700CA199A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC137ACF1FF7364700CA199A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC137AD11FF7364700CA199A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC760C961FF6EE04007B6C05 /* FrameworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC760C991FF6EE04007B6C05 /* FrameworkDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkDemo.h; sourceTree = "<group>"; };
 		AC760C9A1FF6EE04007B6C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +69,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC137AC01FF7364700CA199A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC137AD51FF7365400CA199A /* FrameworkDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC760C921FF6EE04007B6C05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,11 +95,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC137AC41FF7364700CA199A /* UIDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AC137AC51FF7364700CA199A /* AppDelegate.swift */,
+				AC137AC71FF7364700CA199A /* ViewController.swift */,
+				AC137AC91FF7364700CA199A /* Main.storyboard */,
+				AC137ACC1FF7364700CA199A /* Assets.xcassets */,
+				AC137ACE1FF7364700CA199A /* LaunchScreen.storyboard */,
+				AC137AD11FF7364700CA199A /* Info.plist */,
+			);
+			path = UIDemo;
+			sourceTree = "<group>";
+		};
 		AC760C8C1FF6EE04007B6C05 = {
 			isa = PBXGroup;
 			children = (
 				AC760C981FF6EE04007B6C05 /* FrameworkDemo */,
 				AC760CA31FF6EE04007B6C05 /* FrameworkDemoTests */,
+				AC137AC41FF7364700CA199A /* UIDemo */,
 				AC760C971FF6EE04007B6C05 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +123,7 @@
 			children = (
 				AC760C961FF6EE04007B6C05 /* FrameworkDemo.framework */,
 				AC760C9F1FF6EE04007B6C05 /* FrameworkDemoTests.xctest */,
+				AC137AC31FF7364700CA199A /* UIDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +161,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AC137AC21FF7364700CA199A /* UIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC137AD41FF7364700CA199A /* Build configuration list for PBXNativeTarget "UIDemo" */;
+			buildPhases = (
+				AC137ABF1FF7364700CA199A /* Sources */,
+				AC137AC01FF7364700CA199A /* Frameworks */,
+				AC137AC11FF7364700CA199A /* Resources */,
+				AC137AD91FF7365400CA199A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC137AD81FF7365400CA199A /* PBXTargetDependency */,
+			);
+			name = UIDemo;
+			productName = UIDemo;
+			productReference = AC137AC31FF7364700CA199A /* UIDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AC760C951FF6EE04007B6C05 /* FrameworkDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC760CAA1FF6EE04007B6C05 /* Build configuration list for PBXNativeTarget "FrameworkDemo" */;
@@ -149,6 +226,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = cracktheterm;
 				TargetAttributes = {
+					AC137AC21FF7364700CA199A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					AC760C951FF6EE04007B6C05 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
@@ -166,6 +247,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AC760C8C1FF6EE04007B6C05;
 			productRefGroup = AC760C971FF6EE04007B6C05 /* Products */;
@@ -174,11 +256,22 @@
 			targets = (
 				AC760C951FF6EE04007B6C05 /* FrameworkDemo */,
 				AC760C9E1FF6EE04007B6C05 /* FrameworkDemoTests */,
+				AC137AC21FF7364700CA199A /* UIDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC137AC11FF7364700CA199A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC137AD01FF7364700CA199A /* LaunchScreen.storyboard in Resources */,
+				AC137ACD1FF7364700CA199A /* Assets.xcassets in Resources */,
+				AC137ACB1FF7364700CA199A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC760C941FF6EE04007B6C05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +289,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC137ABF1FF7364700CA199A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC137AC81FF7364700CA199A /* ViewController.swift in Sources */,
+				AC137AC61FF7364700CA199A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC760C911FF6EE04007B6C05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +317,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC137AD81FF7365400CA199A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC760C951FF6EE04007B6C05 /* FrameworkDemo */;
+			targetProxy = AC137AD71FF7365400CA199A /* PBXContainerItemProxy */;
+		};
 		AC760CA21FF6EE04007B6C05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC760C951FF6EE04007B6C05 /* FrameworkDemo */;
@@ -222,7 +329,58 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		AC137AC91FF7364700CA199A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC137ACA1FF7364700CA199A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC137ACE1FF7364700CA199A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC137ACF1FF7364700CA199A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		AC137AD21FF7364700CA199A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G62233X968;
+				INFOPLIST_FILE = UIDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cracktheterm.UIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC137AD31FF7364700CA199A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G62233X968;
+				INFOPLIST_FILE = UIDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cracktheterm.UIDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		AC760CA81FF6EE04007B6C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,6 +572,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC137AD41FF7364700CA199A /* Build configuration list for PBXNativeTarget "UIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC137AD21FF7364700CA199A /* Debug */,
+				AC137AD31FF7364700CA199A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC760C901FF6EE04007B6C05 /* Build configuration list for PBXProject "FrameworkDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

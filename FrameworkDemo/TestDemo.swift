@@ -17,4 +17,8 @@ public class TestDemo {
     public func doTest() {
         print("do test")
     }
+    
+    public func testThings() {
+        print("test things")
+    }
 }

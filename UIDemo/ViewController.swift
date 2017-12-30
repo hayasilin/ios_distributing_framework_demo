@@ -1,13 +1,12 @@
 //
 //  ViewController.swift
-//  Demo
+//  UIDemo
 //
 //  Created by Kuan-Wei Lin on 12/30/17.
 //  Copyright © 2017 cracktheterm. All rights reserved.
 //
 
 import UIKit
-
 import FrameworkDemo
 
 class ViewController: UIViewController {
@@ -15,9 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let test = TestDemo()
-        test.doTest()
-        
+        let testDemo = TestDemo()
+        testDemo.doTest()
+        testDemo.testThings()
     }
 
     override func didReceiveMemoryWarning() {

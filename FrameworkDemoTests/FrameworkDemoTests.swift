@@ -27,6 +27,7 @@ class FrameworkDemoTests: XCTestCase {
         
         let testDemo = TestDemo()
         testDemo.doTest()
+        testDemo.testThings()
     }
     
     func testPerformanceExample() {
